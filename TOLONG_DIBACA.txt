@@ -1,0 +1,59 @@
+Langkah Menjalankan Project Laravel :
+
+	- Buat projek laravel baru
+	
+	composer create-project --prefer-dist laravel/laravel nama_project
+	
+	- Masuk ke folder project yang telah dibuat
+	
+	cd nama_project
+	 
+	- Inisialisasi folder git
+	
+	git init 
+
+	- Remote project git
+
+	git remote add origin https://github.com/dzaraita/belajar_laravel.git
+
+	- Pull project git
+
+	git pull origin master
+	
+	- Jika ada error seperti ini:
+	webpack.mix.js
+	"Please move or remove them before you merge.
+	Aborting"
+	->jalankan perintah berikut :
+		○ git fetch
+		○ git reset --hard origin/master
+		
+		Perintah di atas membuat file project dari github menimpa file project pada komputer local.
+		->jika file ingin menimpa hanya spesifik file, gunakan:
+			§ git fetch
+			§ git checkout origin/master <filepath>
+	
+	->lakukan pull lagi
+		git pull origin master
+
+	- Buat database baru melalui phpmyadmin, nama database bebas.
+	
+	- Lakukan import file sql dari folder file_sql pada project ke database
+	
+	- Konfigurasi file .env pada folder project untuk koneksi ke database, sesuai dengan database yang telah dibuat.
+	
+	- Lakukan instalasi package excel dari maatwebsite
+	
+	composer require maatwebsite/excel
+
+	- Jalankan web server
+	
+	php  artisan serve
+
+	- Akses web 
+	localhost:8000
+
+	- Stockopname
+	localhost:8000/stockopname
+
+< ^-^ > mohon masukkannya jika ada yang kurang ….
