@@ -15,6 +15,6 @@
     return view('welcome');
 });*/
 
-Route::get('/siswa', 'SiswaController@index');
-Route::get('/siswa/export_excel', 'SiswaController@export_excel');
-Route::post('/siswa/import_excel', 'SiswaController@import_excel');
+Route::get('/stockopname', 'StockOpnameController@index');
+Route::get('/stockopname/export_excel', 'StockOpnameController@export_excel');
+Route::post('/stockopname/import_excel', 'StockOpnameController@import_excel');

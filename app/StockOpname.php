@@ -4,7 +4,7 @@ namespace App;
  
 use Illuminate\Database\Eloquent\Model;
 
-class Siswa extends Model
+class StockOpname extends Model
 {
 	public $timestamps = false;
     protected $table = "stock_opname";

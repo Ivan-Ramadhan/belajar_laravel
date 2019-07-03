@@ -2,10 +2,10 @@
 
 namespace App\Imports;
 
-use App\Siswa;
+use App\StockOpname;
 use Maatwebsite\Excel\Concerns\ToModel;
 
-class SiswaImport implements ToModel
+class StockOpnameImport implements ToModel
 {
     /**
     * @param array $row
@@ -14,7 +14,7 @@ class SiswaImport implements ToModel
     */
     public function model(array $row)
     {
-        return new Siswa([
+        return new StockOpname([
             'WH_SO' => $row[0],
             'ONT_ZTE_F609' => $row[1], 
             'ONT_ZTE_F670' => $row[2],

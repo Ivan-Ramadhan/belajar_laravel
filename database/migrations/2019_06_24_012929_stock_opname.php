@@ -13,7 +13,7 @@ class StockOpname extends Migration
      */
     public function up()
     {
-        Schema::create('stock_opname', function (Blueprint $table) {
+        Schema::create('stock', function (Blueprint $table) {
     
             $table->string("WH_SO");
             $table->integer("ONT_ZTE_F609");

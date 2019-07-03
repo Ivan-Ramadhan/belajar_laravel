@@ -2,16 +2,16 @@
 
 namespace App\Exports;
 
-use App\Siswa;
+use App\StockOpname;
 use Maatwebsite\Excel\Concerns\FromCollection;
 
-class SiswaExport implements FromCollection
+class StockOpnameExport implements FromCollection
 {
     /**
     * @return \Illuminate\Support\Collection
     */
     public function collection()
     {
-        return Siswa::all();
+        return StockOpname::all();
     }
 }
